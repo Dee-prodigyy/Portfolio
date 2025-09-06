@@ -35,11 +35,11 @@ export function Hero() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold  mb-6 text-[#D0F4EA] text-balance">
               Hi, I'm <span className="text-accent">Divine Enyabine</span>
             </h1>
-            <p className="text-xl sm:text-2xl text-muted-foreground mb-4">Software Developer</p>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl text-pretty">
+            <p className="text-xl sm:text-2xl text-[#D0F4EA] mb-4">Software Developer</p>
+            <p className="text-lg text-[#D0F4EA] mb-8 max-w-2xl text-pretty">
               I create beautiful, functional web applications using modern technologies. Passionate about clean code,
               user experience, and solving complex problems with elegant solutions.
             </p>
@@ -56,11 +56,11 @@ export function Hero() {
             </div>
 
             <div className="flex gap-4 justify-center md:justify-start">
-              <Button variant="ghost" size="sm" onClick={handleGithubClick}>
-                <Github className="h-5 w-5" />
+              <Button variant="ghost" size="sm" onClick={handleGithubClick} className="hover:bg-[#D0F4EA]">
+                <Github className="h-5 w-5 text-[#9984D4] " />
               </Button>
-              <Button variant="ghost" size="sm" onClick={handleLinkedinClick}>
-                <Linkedin className="h-5 w-5" />
+              <Button variant="ghost" size="sm" onClick={handleLinkedinClick} className="hover:bg-[#D0F4EA]">
+                <Linkedin className="h-5 w-5 text-[#9984D4] " />
               </Button>
             </div>
           </div>

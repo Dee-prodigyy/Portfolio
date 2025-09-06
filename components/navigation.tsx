@@ -43,12 +43,10 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
-            <ThemeToggle />
           </div>
 
           {/* Mobile Navigation Controls */}
           <div className="md:hidden flex items-center space-x-2">
-            <ThemeToggle />
             <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <XIcon /> : <MenuIcon />}
             </Button>

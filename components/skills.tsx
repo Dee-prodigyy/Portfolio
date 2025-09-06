@@ -26,11 +26,11 @@ const skills = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#D0F4EA]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Skills & Expertise</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <p className="text-lg text-[#141B41] max-w-2xl mx-auto text-pretty">
             Technologies and tools I use to build robust, scalable applications from concept to deployment.
           </p>
         </div>
