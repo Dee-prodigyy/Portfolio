@@ -69,6 +69,8 @@ export function Hero() {
                 <Image
                   src="/portfolio.jpg"
                   alt="Divine Enyabine"
+                  width={320}  // lg:w-80 = 320px
+                  height={320} // lg:h-80 = 320px
                   className="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover border-4 border-background shadow-xl"
                   priority={true}
                 />

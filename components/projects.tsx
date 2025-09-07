@@ -25,7 +25,7 @@ const projects = [
     description:
       "A Next.js and Tailwind CSS app for fashion designers to record client profiles, capture detailed measurements, and attach style preferences with images, all stored securely in MongoDB.",
     image: "/fashion.jpg",
-    tech: ["Next.js", "Express.js", "Node.js", "MongoDB",],
+    tech: ["Next.js", "Express.js", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/Dee-prodigyy/fashion-measurement-app",
   },
   {
@@ -42,11 +42,11 @@ const projects = [
     description:
       "A full-stack point of sale system enabling sales tracking, product management, and customer transactions with a clean, responsive interface.",
     image: "/pos.png",
-    tech: ["Nextjs", "Tailwind CSS", ],
+    tech: ["Nextjs", "Tailwind CSS"],
     liveUrl: "#",
     githubUrl: "#",
   },
-    {
+  {
     title: "NGO Template",
     description:
       "A modern, responsive NGO website template built with Next.js and Tailwind CSS. Includes sections for mission, events, leadership profiles, and content management readiness.",
@@ -71,11 +71,13 @@ export function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border">
-              <div className="relative overflow-hidden rounded-t-lg">
+              <div className="relative w-full h-48 overflow-hidden rounded-t-lg">
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <CardHeader>
@@ -91,12 +93,14 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLinkIcon />
-                      Live Demo
-                    </a>
-                  </Button>
+                  {project.liveUrl && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLinkIcon />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
                   <Button variant="ghost" size="sm" asChild>
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                       <GithubIcon />
