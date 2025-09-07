@@ -5,11 +5,7 @@ import {
   Palette,
   Server,
   GitBranch,
-  Container,
-  Cloud,
-  Smartphone,
   Layers,
-  Terminal,
   FileCode,
 } from "lucide-react"
 
