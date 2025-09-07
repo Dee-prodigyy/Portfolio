@@ -18,9 +18,6 @@ export function Hero() {
     document.body.removeChild(link)
   }
 
-  const handleEmailClick = () => {
-    window.location.href = "mailto:divineenyabine2019@gmail.com?subject=Let's Work Together"
-  }
 
   const handleGithubClick = () => {
     window.open("https://github.com/Dee-prodigyy", "_blank")
@@ -36,7 +33,7 @@ export function Hero() {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold  mb-6 text-[#D0F4EA] text-balance">
-              Hi, I'm <span className="text-accent">Divine Enyabine</span>
+              Hi, I&apos;m <span className="text-accent">Divine Enyabine</span>
             </h1>
             <p className="text-xl sm:text-2xl text-[#D0F4EA] mb-4">Software Developer</p>
             <p className="text-lg text-[#D0F4EA] mb-8 max-w-2xl text-pretty">

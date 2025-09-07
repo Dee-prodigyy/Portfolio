@@ -122,10 +122,10 @@ export function Contact() {
     <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#141B41]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#9984D4] mb-4">Let's Work Together</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#9984D4] mb-4">Let&apos;s Work Together</h2>
           <p className="text-lg text-[#D0F4EA] max-w-2xl mx-auto text-pretty">
-            Have a project in mind? I'd love to hear about it. Send me a message and let's discuss how we can bring your
-            ideas to life.
+              Have a project in mind? I&apos;d love to hear about it. Send me a message and let&apos;s discuss how we can bring your
+              ideas to life.
           </p>
         </div>
 
