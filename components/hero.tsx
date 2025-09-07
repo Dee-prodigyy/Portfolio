@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Download } from "lucide-react"
+import Image from 'next/image'
 
 export function Hero() {
   const handleGetInTouch = () => {
@@ -65,10 +66,11 @@ export function Hero() {
           <div className="flex-shrink-0 flex justify-center">
             <div className="relative">
               <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center">
-                <img
+                <Image
                   src="/portfolio.jpg"
                   alt="Divine Enyabine"
                   className="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover border-4 border-background shadow-xl"
+                  priority={true}
                 />
               </div>
             </div>

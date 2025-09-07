@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import Image from 'next/image'
 
 const ExternalLinkIcon = () => (
   <svg className="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -71,7 +72,7 @@ export function Projects() {
           {projects.map((project, index) => (
             <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border">
               <div className="relative overflow-hidden rounded-t-lg">
-                <img
+                <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
